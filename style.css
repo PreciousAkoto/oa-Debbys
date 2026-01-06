@@ -1,0 +1,765 @@
+/* --- index--- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfaf7;
+}
+
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8rem;
+    /* CHANGED: Now using a rich brown */
+    color: #8b4513; 
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #d2691e;
+    font-weight: 600;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?auto=format&fit=crop&w=1600&q=80'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.btn-main {
+    background-color: #d2691e;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+/* --- Features Section --- */
+.features {
+    display: flex;           
+    justify-content: center;  
+    gap: 20px;               
+    padding: 60px 5%;        
+    max-width: 1200px;       
+    margin: 0 auto;          
+}
+
+.feature-card {
+    flex: 1;                 
+    background: #fff;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-card h3 {
+    font-family: 'Pacifico', cursive;
+    color: #d2691e;
+    margin: 15px 10px 5px;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 15px;
+}
+
+/* --- Responsive for Mobile --- */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* --- about --- */
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #443; 
+    background-color: #fffaf5; /* Creamy background for the page */
+}
+
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* --- Logo with Yellow Background --- */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.4rem;
+    color: #8b4513;           /* Rich Brown Text */
+    background-color: #ffeb3b; /* Vibrant Yellow Background */
+    padding: 8px 20px;        /* Spacing inside the yellow box */
+    border-radius: 50px;      /* Pill shape */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #d2691e;
+    font-weight: 600;
+}
+
+/* --- Page Header (Hero Area) --- */
+.page-header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(139, 69, 19, 0.6), rgba(139, 69, 19, 0.6)), 
+                url('https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.page-header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* --- Our Story Section --- */
+.story {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.story h2 {
+    font-family: 'Pacifico', cursive;
+    color: #8b4513;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+/* --- Mission & Vision Container --- */
+.mission-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 8% 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Mission & Vision Cards --- */
+.card {
+    flex: 1;
+    background: #fff;
+    padding: 50px 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-top: 5px solid #ffeb3b; /* Yellow accent to match the logo */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-family: 'Pacifico', cursive;
+    color: #8b4513;
+    margin-bottom: 20px;
+}
+
+/* --- Mobile View --- */
+@media (max-width: 768px) {
+    .mission-vision-container {
+        flex-direction: column;
+    }
+    .logo {
+        font-size: 1.1rem;
+        padding: 6px 15px;
+    }
+}
+
+
+
+
+
+/* --- menu --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+    color: #8b4513;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #d2691e;
+    font-weight: 600;
+}
+
+/* --- Menu Hero Section --- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* --- Menu Grid (The Features Section) --- */
+.features {
+    display: grid;
+    /* This creates 3 equal columns that automatically adjust */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    padding: 60px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Individual Menu Card --- */
+.feature-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-card h3 {
+    font-family: 'Pacifico', cursive;
+    color: #8b4513;
+    margin: 15px 10px 5px;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Ensures buttons/prices line up even if text length varies */
+}
+
+/* --- Price Styling --- */
+.feature-card span {
+    display: block;
+    font-weight: 600;
+    color: #d2691e;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* --- Responsive Layout --- */
+
+/* For Tablets (2 columns) */
+@media (max-width: 992px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For Phones (1 column) */
+@media (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+
+
+
+
+
+
+/* --- service --- */
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf5; /* Warm cream background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #fff;
+    border-bottom: 1px solid #f0e6db;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Pink Logo Background */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.6rem;
+    color: #fff;              /* White text */
+    background-color: #fce4ec; /* Soft Pink */
+    padding: 8px 22px;
+    border-radius: 50px;      /* Pill shape */
+    font-weight: normal;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #d2691e;
+    font-weight: 600;
+}
+
+/* --- Page Header (Pink Background) --- */
+.page-header {
+    text-align: center;
+    padding: 90px 20px;
+    background-color: #fce4ec; /* Pink background */
+    border-bottom: 2px solid #f8bbd0;
+}
+
+.page-header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.2rem;
+    color: #c2185b; /* Deep berry pink */
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: #880e4f;
+    font-weight: 300;
+}
+
+/* --- Services Container --- */
+.services-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 5% 80px;
+}
+
+/* --- Horizontal Row Layout (Flexbox) --- */
+.service-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0;
+    border-bottom: 1px solid #eaddcf; /* Simple line divider */
+}
+
+/* Remove divider from the last service */
+.service-row:last-child {
+    border-bottom: none;
+}
+
+/* Image Styling */
+.service-image {
+    flex: 0 0 45%; /* Image takes 45% width */
+}
+
+.service-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover; /* Ensures image isn't squashed */
+    border-radius: 8px; /* Soft edges */
+    display: block;
+}
+
+/* Text Styling */
+.service-content {
+    flex: 0 0 48%; /* Text takes 48% width */
+}
+
+.service-content h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2rem;
+    color: #d2691e;
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Artisan Action Link (Underlined) */
+.action-link {
+    text-decoration: none;
+    color: #8b4513;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f8bbd0; /* Pink underline */
+    transition: 0.3s ease;
+}
+
+.action-link:hover {
+    color: #c2185b;
+    padding-left: 10px; /* Moves slightly to the right */
+}
+
+/* --- Responsive (Mobile View) --- */
+@media (max-width: 850px) {
+    .service-row {
+        flex-direction: column; /* Stack image above text */
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .service-image, .service-content {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .service-image {
+        margin-bottom: 30px;
+    }
+
+    .service-image img {
+        height: 280px;
+    }
+}
+
+
+
+
+
+
+/* --- contact --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffaf5; /* Creamy background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: #fff;
+    border-bottom: 1px solid #f0e6db;
+}
+
+/* Pink Logo Background */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.6rem;
+    color: #fff;              /* White text */
+    background-color: #fce4ec; /* Soft Pink */
+    padding: 8px 22px;
+    border-radius: 50px;      /* Pill shape */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #d2691e; /* Brownish-orange for active links */
+    font-weight: 600;
+}
+
+/* --- Contact Hero (Pink Header) --- */
+.contact-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fce4ec; /* Matching pink theme */
+    border-bottom: 2px solid #f8bbd0;
+}
+
+.contact-hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    color: #c2185b; /* Deep berry pink */
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 1.1rem;
+    color: #880e4f;
+    font-weight: 300;
+}
+
+/* --- Contact Info Row Layout --- */
+.contact-wrapper {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 5%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Vertical stack for horizontal rows */
+    gap: 0; 
+}
+
+/* Individual Row Item */
+.info-box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    border-bottom: 1px solid #eaddcf; /* Divider line between rows */
+    text-align: center;
+}
+
+.info-box:last-child {
+    border-bottom: none; /* Removes line from the last row */
+}
+
+.info-box h3 {
+    font-family: 'Pacifico', cursive;
+    color: #d2691e;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* --- WhatsApp Button --- */
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #25D366; /* Official WhatsApp Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s, background 0.3s;
+    align-self: center; /* Centers button in the row */
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-top: 1px solid #f0e6db;
+    margin-top: 40px;
+    color: #8b4513;
+    font-size: 0.9rem;
+}
+
+/* --- Mobile View --- */
+@media (max-width: 600px) {
+    .contact-hero h1 {
+        font-size: 2.2rem;
+    }
+}
