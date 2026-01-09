@@ -134,8 +134,16 @@ nav ul li a:hover, .active {
     .feature-card {
         width: 100%;
         max-width: 320px;
+        .feature-card:hover {
+    transform: translateY(-10px) !important;
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
     }
 }
+
+
+
 
 /* --- about --- */
 /* --- Global Styles --- */
@@ -217,7 +225,41 @@ nav ul li a:hover, .active {
 .page-header p {
     font-size: 1.2rem;
     font-weight: 300;
+    /* --- Mission & Vision Styling --- */
+.mission-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 8%;
+    flex-wrap: wrap;
 }
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+    border-bottom: 4px solid #ffeb3b; /* Yellow accent to match your logo */
+}
+
+.card h2 {
+    font-family: 'Pacifico', cursive;
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+.story {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+}
+
+
 
 /* --- Our Story Section --- */
 .story {
@@ -429,6 +471,44 @@ nav ul li a:hover, .active {
     }
     .hero-content h1 {
         font-size: 2.2rem;
+        /* --- Optimized Menu Grid --- */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Better responsiveness */
+    gap: 30px;
+    padding: 60px 8%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Badge for the price */
+.feature-card span {
+    display: inline-block;
+    background: #fffaf5;
+    border: 1px solid #d2691e;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #d2691e;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.feature-card:hover {
+    box-shadow: 0 12px 25px rgba(139, 69, 19, 0.15);
+}
     }
 }
 
@@ -607,6 +687,21 @@ nav ul li a:hover, .active {
     .service-image img {
         height: 280px;
     }
+    /* Enhanced Action Link Hover */
+.action-link {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.action-link:hover {
+    background-color: #fce4ec; /* Soft pink background on hover */
+    border: 1px solid #f8bbd0;
+    color: #c2185b;
+    padding-left: 20px; /* Moves arrow slightly */
+}
 }
 
 
@@ -762,4 +857,29 @@ footer {
     .contact-hero h1 {
         font-size: 2.2rem;
     }
+    /* Smooth reveal for info boxes */
+.info-box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+.info-box:nth-child(1) { animation-delay: 0.1s; }
+.info-box:nth-child(2) { animation-delay: 0.3s; }
+.info-box:nth-child(3) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer styling polish */
+footer p {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
 }
