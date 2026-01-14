@@ -57,29 +57,6 @@ function handleNavStyles() {
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    /* --- 1. GLOBAL: CARD CLICK LOGIC (HOME & MENU) --- */
-    const cards = document.querySelectorAll('.feature-card');
-    cards.forEach(card => {
-        card.style.cursor = 'pointer';
-        card.addEventListener('click', () => {
-            const pastryName = card.querySelector('h3').innerText;
-            const isMenuPage = window.location.pathname.includes('menu.html');
-
-            if (isMenuPage) {
-                const price = card.querySelector('span').innerText;
-                const userWantsToOrder = confirm(`Item: ${pastryName}\nPrice: ${price}\n\nWould you like to message us on WhatsApp to order?`);
-                if (userWantsToOrder) {
-                    const phone = "233541400155";
-                    const text = encodeURIComponent(`Hello! I'd like to order the ${pastryName} (${price}).`);
-                    window.open(`https://wa.me/${phone}?text=${text}`, '_blank');
-                }
-            } else {
-                alert(`We are directing you to our menu for pricing and availability of our ${pastryName}.`);
-                window.location.href = 'menu.html';
-            }
-        });
-    });
-
     /* --- 2. ABOUT PAGE: SCROLL REVEAL & STATS --- */
     // This makes mission/vision cards slide in as you scroll down
     const aboutCards = document.querySelectorAll('.card, .story');
@@ -134,4 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.style.boxShadow = 'none';
         }
     });
+
 });
