@@ -178,7 +178,7 @@ nav {
     font-family: 'Pacifico', cursive;
     font-size: 1.4rem;
     color: #8b4513;           /* Rich Brown Text */
-    background-color: #ffeb3b; /* Vibrant Yellow Background */
+    background-color: #d4af37; /* Gold background */
     padding: 8px 20px;        /* Spacing inside the yellow box */
     border-radius: 50px;      /* Pill shape */
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
@@ -242,7 +242,7 @@ nav ul li a:hover, .active {
     min-width: 300px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     text-align: center;
-    border-bottom: 4px solid #ffeb3b; /* Yellow accent to match your logo */
+    border-bottom: 4px solid #d4af37; /* Gold accent to match your logo */
 }
 
 .card h2 {
@@ -294,7 +294,7 @@ nav ul li a:hover, .active {
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    border-top: 5px solid #ffeb3b; /* Yellow accent to match the logo */
+    border-top: 5px solid #d4af37; /* Gold accent to match the logo */
     transition: transform 0.3s ease;
 }
 
@@ -546,12 +546,12 @@ nav {
     z-index: 1000;
 }
 
-/* Pink Logo Background */
+/* Yellow Logo Background */
 .logo {
     font-family: 'Pacifico', cursive;
     font-size: 1.6rem;
-    color: #fff;              /* White text */
-    background-color: #fce4ec; /* Soft Pink */
+    color: #8b4513;           /* Rich brown text for contrast */
+    background-color: #fff6d0; /* Soft gold */
     padding: 8px 22px;
     border-radius: 50px;      /* Pill shape */
     font-weight: normal;
@@ -578,25 +578,41 @@ nav ul li a:hover, .active {
     font-weight: 600;
 }
 
-/* --- Page Header (Pink Background) --- */
+/* --- Page Header (Yellow Background) --- */
 .page-header {
     text-align: center;
     padding: 90px 20px;
-    background-color: #fce4ec; /* Pink background */
-    border-bottom: 2px solid #f8bbd0;
+    background-color: #fff6d0; /* Soft gold background */
+    border-bottom: 2px solid #d4af37;
 }
 
 .page-header h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3.2rem;
-    color: #c2185b; /* Deep berry pink */
+    color: #ffffff; /* White text per request */
     margin-bottom: 10px;
 }
 
 .page-header p {
     font-size: 1.2rem;
-    color: #880e4f;
+    color: #ffffff;
     font-weight: 300;
+}
+
+/* Services page: use a background image for the header */
+.services-page .page-header {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('work.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+/* Menu page: use a chocolate background for the hero */
+.menu-page .hero {
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('choco.avif');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
 }
 
 /* --- Services Container --- */
@@ -629,8 +645,10 @@ nav ul li a:hover, .active {
     width: 100%;
     height: 380px;
     object-fit: cover; /* Ensures image isn't squashed */
+    object-position: center top; /* Show top of image (centered horizontally) so heads are visible */
     border-radius: 8px; /* Soft edges */
     display: block;
+    
 }
 
 /* Text Styling */
@@ -658,12 +676,12 @@ nav ul li a:hover, .active {
     font-weight: 600;
     font-size: 1.1rem;
     padding-bottom: 5px;
-    border-bottom: 2px solid #f8bbd0; /* Pink underline */
+    border-bottom: 2px solid #d4af37; /* Gold underline */
     transition: 0.3s ease;
 }
 
 .action-link:hover {
-    color: #c2185b;
+    color: #8b4513;
     padding-left: 10px; /* Moves slightly to the right */
 }
 
@@ -697,9 +715,9 @@ nav ul li a:hover, .active {
 }
 
 .action-link:hover {
-    background-color: #fce4ec; /* Soft pink background on hover */
-    border: 1px solid #f8bbd0;
-    color: #c2185b;
+    background-color: #fff6d0; /* Soft gold background on hover */
+    border: 1px solid #d4af37;
+    color: #8b4513;
     padding-left: 20px; /* Moves arrow slightly */
 }
 }
@@ -733,14 +751,16 @@ nav {
     border-bottom: 1px solid #f0e6db;
 }
 
-/* Pink Logo Background */
+/* Consistent visible logo styling */
 .logo {
     font-family: 'Pacifico', cursive;
     font-size: 1.6rem;
-    color: #fff;              /* White text */
-    background-color: #fce4ec; /* Soft Pink */
+    color: #8b4513;           /* Rich brown text for contrast */
+    background-color: #d4af37; /* Gold pill for visibility */
     padding: 8px 22px;
     border-radius: 50px;      /* Pill shape */
+    display: inline-block;
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.08);
 }
 
 nav ul {
@@ -763,24 +783,24 @@ nav ul li a:hover, .active {
     font-weight: 600;
 }
 
-/* --- Contact Hero (Pink Header) --- */
+/* --- Contact Hero (Yellow Header) --- */
 .contact-hero {
     text-align: center;
     padding: 80px 20px;
-    background-color: #fce4ec; /* Matching pink theme */
-    border-bottom: 2px solid #f8bbd0;
+    background-color: #fff6d0; /* Matching soft gold theme */
+    border-bottom: 2px solid #d4af37;
 }
 
 .contact-hero h1 {
     font-family: 'Pacifico', cursive;
     font-size: 3rem;
-    color: #c2185b; /* Deep berry pink */
+    color: #8b4513; /* Rich brown */
     margin-bottom: 10px;
 }
 
 .contact-hero p {
     font-size: 1.1rem;
-    color: #880e4f;
+    color: #8b4513;
     font-weight: 300;
 }
 
